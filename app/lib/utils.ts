@@ -56,3 +56,5 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
   // another ellipsis, and the last page.
   return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
 };
+
+export const delay = (ms = 3000) => new Promise((resolve) => setTimeout(resolve, ms));
